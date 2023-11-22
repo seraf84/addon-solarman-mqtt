@@ -1,0 +1,25 @@
+configuration:
+  solarman_username:
+    name: Solarman Username
+    description: Enter your Solarman Username
+  solarman_password:
+    name: Solarman Password
+    description: Enter your Solarman Password
+  solarman_app_id:
+    name: Solarman Application ID
+    description: Enter your Solarman API Application ID
+  solarman_secret:
+    name: Solarman Secret
+    description: Enter your Solarman API Secret
+  mqtt_broker:
+    name: MQTT Broker address
+    description: Enter the address of the MQTT Broker
+  mqtt_port:
+    name: MQTT Broker port
+    description: Enter the port of the MQTT Broker
+  mqtt_username:
+    name: MQTT Username
+    description: Enter your MQTT Username
+  mqtt_password:
+    name: MQTT Password
+    description: Enter your MQTT Password

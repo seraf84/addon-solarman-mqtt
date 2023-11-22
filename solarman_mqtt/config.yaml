@@ -1,0 +1,41 @@
+# https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
+name: Solarman MQTT
+
+# must match Docker image tag
+version: "2023.11.0"
+slug: solarman_mqtt
+description: Home Assistant add-on to send data from the Solarman API to an MQTT broker
+url: "https://github.com/austinmroczek/addon-solarman-mqtt/tree/main/solarman_mqtt"
+arch:
+  - armhf
+  - armv7
+  - aarch64
+  - amd64
+  - i386
+init: false
+
+# probably update to store the config file ?
+map:
+  - share:rw
+
+options:
+  solarman_username: null
+  solarman_password: null
+  solarman_app_id: null
+  solarman_secret: null
+  mqtt_broker: "homeassistant.local"
+  mqtt_port: 1883
+  mqtt_username: null
+  mqtt_password: null
+
+schema:
+  solarman_username: str
+  solarman_password: password
+  solarman_app_id: str
+  solarman_secret: str
+  mqtt_broker: url
+  mqtt_port: int
+  mqtt_username: str
+  mqtt_password: password
+
+image: "ghcr.io/austinmroczek/{arch}-addon-solarman-mqtt"
