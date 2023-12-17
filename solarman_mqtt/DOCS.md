@@ -1,10 +1,13 @@
-# Home Assistant Add-on: Example add-on
+# Home Assistant Add-on: Solarman MQTT
 
-## How to use
+# MQTT Broker
 
-This add-on really does nothing. It is just an example.
+You must have an MQTT broker set up. The Mosquitto MQTT broker add-on is recommended. Set it up using the Home Assistant add-on store in the "Official add-ons" section.
 
-When started it will print the configured message or "Hello world" in the log.
+## Solarman
 
-It will also print "All done!" in `/share/example_addon_output.txt` to show
-simple example of the usage of `map` in addon config.
+First have to follow the [Solarman MQTT](https://github.com/mpepping/solarman-mqtt) instructions to get your system running from the command line.
+
+Then use the stationID, inverterID, loggerID and other variables for the configuration of this add-on.
+
+Start this add-on.
