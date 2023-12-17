@@ -11,12 +11,27 @@ configuration:
   solarman_secret:
     name: Solarman Secret
     description: Enter your Solarman API Secret
+  solarman_name:
+    name: Solarman Device Name
+    description: Enter the name of your inverter/device
+  solarman_station:
+    name: Station ID
+    description: Enter the Solarman Station ID
+  solarman_inverter:
+    name: Inverter ID
+    description: Enter the Solarman Inverter ID
+  solarman_logger:
+    name: Logger ID
+    description: Enter the Solarman Logger ID
   mqtt_broker:
     name: MQTT Broker address
     description: Enter the address of the MQTT Broker
   mqtt_port:
     name: MQTT Broker port
     description: Enter the port of the MQTT Broker
+  mqtt_topic:
+    name: MQTT Topic
+    description: Enter the MQTT topic.
   mqtt_username:
     name: MQTT Username
     description: Enter your MQTT Username
