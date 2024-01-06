@@ -41,8 +41,8 @@ schema:
   solarman_secret: str
   solarman_name: str
   solarman_station: int
-  solarman_inverter: int
-  solarman_logger: int
+  solarman_inverter: str
+  solarman_logger: str
   mqtt_broker: str
   mqtt_port: int
   mqtt_topic: str
