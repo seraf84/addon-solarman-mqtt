@@ -7,7 +7,7 @@ ADD . /app
 
 # Install requirements for add-on
 RUN apk add --no-cache git curl python3 py3-pip
-RUN git clone https://github.com/mpepping/solarman-mqtt.git
+RUN git clone https://github.com/seraf84/solarman-mqtt.git
 RUN pip install -r /app/solarman-mqtt/requirements.txt
 
 RUN chmod a+x run.sh
