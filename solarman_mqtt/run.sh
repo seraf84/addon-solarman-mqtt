@@ -40,9 +40,9 @@ cat << EOF > config.json
   "username": "$SM_USERNAME",
   "passhash": "$SM_HASH",
   "stationId": $SM_STATION,
-  "inverterId": $SM_INVERTER,
-  "loggerId": $SM_LOGGER,
-  "debug": false,
+  "inverterId": "$SM_INVERTER",
+  "loggerId": "$SM_LOGGER",
+  "debug": true,
   "mqtt":{
     "broker": "$MQTT_BROKER",
     "port": $MQTT_PORT,
